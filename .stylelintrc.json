@@ -1,0 +1,54 @@
+{
+	"extends": [
+		"stylelint-config-standard"
+	],
+	"plugins": [
+		"stylelint-order",
+		"@stylistic/stylelint-plugin"
+	],
+	"ignoreFiles": [
+		"**/*.{js,jsx,ts,tsx,mjs,cjs,json,md}",
+		"**/*.{svg,ico,png,jpg,jpeg,webp,gif,avif}",
+		"**/*.map",
+		"**/*.lock",
+		"**/*.config.*",
+		"**/*.d.ts"
+	],
+	"rules": {
+		"@stylistic/indentation": "tab",
+		"color-hex-length": "short",
+		"color-no-invalid-hex": true,
+		"order/order": [
+			"custom-properties",
+			"declarations"
+		],
+		"order/properties-order": [
+			[
+				"position",
+				"top",
+				"right",
+				"bottom",
+				"left",
+				"display",
+				"flex",
+				"flex-direction",
+				"justify-content",
+				"align-items",
+				"width",
+				"height",
+				"margin",
+				"padding",
+				"color",
+				"background",
+				"border",
+				"border-radius",
+				"box-shadow",
+				"font-size",
+				"font-weight"
+			],
+			{
+				"unspecified": "bottomAlphabetical"
+			}
+		]
+	}
+}
