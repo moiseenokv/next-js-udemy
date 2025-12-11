@@ -8,13 +8,14 @@
 		"start": "next start",
 		"lint:check": "eslint",
 		"lint:fix": "eslint . --ext .ts,.tsx,.js,.jsx --fix",
-		"lint:style:check": "stylelint **/* --allow-empty-input",
-		"lint:style:fix": "stylelint **/* --fix --allow-empty-input"
+		"lint:style:check": "stylelint **/*.{css,scss} --allow-empty-input",
+		"lint:style:fix": "stylelint **/*.{css,scss} --fix --allow-empty-input"
 	},
 	"dependencies": {
 		"next": "16.0.7",
 		"react": "19.2.0",
-		"react-dom": "19.2.0"
+		"react-dom": "19.2.0",
+		"sass": "^1.96.0"
 	},
 	"devDependencies": {
 		"@stylistic/eslint-plugin": "^5.6.1",
@@ -28,6 +29,7 @@
 		"cross-env": "^10.1.0",
 		"eslint": "^9.39.1",
 		"eslint-config-next": "16.0.7",
+		"postcss-scss": "^4.0.9",
 		"stylelint": "^16.26.1",
 		"stylelint-config-standard": "^39.0.1",
 		"stylelint-order": "^7.0.0",

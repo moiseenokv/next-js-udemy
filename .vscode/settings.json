@@ -1,0 +1,12 @@
+{
+	"stylelint.validate": [
+		"css",
+		"scss",
+		"sass"
+	],
+	"stylelint.enable": true,
+	"stylelint.customSyntax": "postcss-scss",
+	"editor.codeActionsOnSave": {
+		"source.fixAll.stylelint": "always"
+	}
+}

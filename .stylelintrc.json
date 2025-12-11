@@ -2,6 +2,7 @@
 	"extends": [
 		"stylelint-config-standard"
 	],
+	"customSyntax": "postcss-scss",
 	"plugins": [
 		"stylelint-order",
 		"@stylistic/stylelint-plugin"
