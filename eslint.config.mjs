@@ -4,6 +4,7 @@ import nextTs from "eslint-config-next/typescript";
 import tsParser from "@typescript-eslint/parser";
 import tsPlugin from "@typescript-eslint/eslint-plugin";
 import stylistic from "@stylistic/eslint-plugin";
+import reactHooks from "eslint-plugin-react-hooks";
 
 const eslintConfig = defineConfig([
 	...nextVitals,
@@ -20,6 +21,7 @@ const eslintConfig = defineConfig([
 		plugins: {
 			"@typescript-eslint": tsPlugin,
 			"@stylistic": stylistic,
+			"react-hooks": reactHooks,
 		},
 		rules: {
 			semi: "off",
