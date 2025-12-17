@@ -1,0 +1,35 @@
+.star{
+	display: inline-block;
+
+	svg {
+		margin-right: 5px;
+	}
+
+	&.filled {
+		svg {
+			fill: var(--primary);
+		}
+		
+	}
+
+	&.editable {
+		cursor: pointer;
+	}
+
+	&.rating-wrapper {
+		position: relative;
+	}
+
+	&.error-message {
+		position: absolute;
+		bottom: -20px;
+		left: 0;
+		color: var(--red);
+	}
+
+	&.error {
+		svg {
+			stroke: var(--red);
+		}
+	}
+}
